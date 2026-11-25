@@ -1,30 +1,35 @@
-# Notification classifier
-
-An on-device text classifier that decides whether an Android notification is **junk**
-(promotions, engagement bait, digests) or something worth **keeping** (OTP, payments,
-orders, security alerts, messages from people).
-
-It is the model behind [AI Android Notification Filter](https://github.com/shreyash-sharma-byte/ai-android-notification-filter):
-plain TF-IDF plus logistic regression, ~76 KB, no runtime dependencies, no network at
-inference time. It runs in a few milliseconds on a mid-range phone.
-
 ## Results
 
-Measured on a held-out split that no setting was tuned against:
+Two measurements, because they answer different questions.
+
+**Synthetic held-out test** (`test.psv`, 157 rows, same generator as training):
 
 | Metric | Value |
 |---|---|
-| Junk recall | **93.4%** |
-| False dismissals | **0 of 66** |
-| Accuracy | **96.2%** |
-| Training rows | 1,027 |
-| Features | 7,584 |
-| Decision threshold | 0.10 (chosen on `dev`, zero false dismissals) |
+| Junk recall | 93.4% |
+| False dismissals | 0 of 66 |
+| Accuracy | 96.2% |
 
-The number that matters most is the second one. A notification filter that removes a
-promotion is mildly useful; one that removes an OTP, a payment alert or a message from
-your mother is actively harmful. The threshold is chosen so that `dev` has **no** false
-dismissals, and everything else is traded away for that.
+This number is optimistic by construction: the test rows were written by the
+same process as the training rows, so they share vocabulary. Do not quote it as
+real-world accuracy.
+
+**Real device notifications** (grouped split, whole title-families held out):
+
+| Metric | Value |
+|---|---|
+| Junk recall | **86.3%** |
+| False dismissals | **2 of 48** |
+| Accuracy | **89.5%** |
+
+Measured on 392 notifications captured on a real phone, with the split made by
+title-family so paraphrases cannot appear on both sides. Those raw captures are
+**not published** — they are the user's personal messages — but the split, the
+scoring code (`tools/eval_export.py`) and the numbers are.
+
+The gap between 93.4% and 86.3% is the honest cost of leaving the synthetic
+distribution.
+
 
 ## Layout
 
@@ -101,9 +106,20 @@ any user's phone, and no personal information.
 | `extra_tricky.psv` | 61 | smart-inbox ads, digests, profile nudges |
 | `extra_apps.psv` | 41 | delivery and travel apps |
 | `extra_apps2.psv` | 41 | banking, jobs, social |
-| `extra_finance.psv` | 33 | insurance and card *advertising* vs real bank alerts |
+| `extra_finance.psv` | 33 |
+| `extra_comms.psv` | 22 |
+| `extra_dev.psv` | 27 | insurance and card *advertising* vs real bank alerts |
 | `dev.psv` | 148 | threshold selection |
 | `test.psv` | 157 | reported numbers only |
+
+## Limitations
+
+- **Bag of words, no syntax.** It cannot tell a recruiter invite that ends
+  "Apply now" from a mass ad that says the same, unless both appear in training.
+- **~20 rows per sender** in the real captures, so per-sender behaviour is
+  weakly learned. A sender-weighted feature was tried and measured: no gain.
+- **~40% of real decisions are marginal** (within ±0.6 of the threshold).
+- **English / Indian English only.** No Hinglish, no other scripts.
 
 ## Licence
 

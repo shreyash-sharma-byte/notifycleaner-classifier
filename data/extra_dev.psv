@@ -1,0 +1,27 @@
+GitHub|Build failed|Workflow CI failed on main: unit tests failed.|KEEP
+GitHub|Review requested|PR #482 needs your review: fix token refresh.|KEEP
+GitHub|Comment on your PR|Priya commented on #482: can you rebase?|KEEP
+GitHub|Security alert|Dependabot found a critical vulnerability in lodash.|KEEP
+GitHub|Check run failed|Deploy to production failed at step build.|KEEP
+GitHub|Release published|Release v2.1.0 published.|JUNK
+GitHub|New features|Copilot now supports multi-file edits.|JUNK
+GitHub|Weekly digest|Here is what happened in your repositories.|JUNK
+GitHub|Repository trending|Your repo appeared in trending this week.|JUNK
+GitLab|Pipeline failed|Pipeline #9921 failed on merge request !87.|KEEP
+GitLab|Merge request assigned|You were assigned MR !87 by Ravi.|KEEP
+GitLab|New release|GitLab 17.6 is available. See what is new.|JUNK
+Jira|Issue assigned|DEV-412 assigned to you: Fix payment retry.|KEEP
+Jira|Sprint ending soon|Sprint 24 ends in 2 days. Review your board.|KEEP
+Jira|Try Jira Product Discovery|Prioritise ideas with the new tool.|JUNK
+Sentry|New issue|TypeError in checkout.js affecting 128 users.|KEEP
+Sentry|Incident resolved|Production incident resolved after 12 minutes.|KEEP
+Sentry|Weekly report|Your projects had 3 issues this week.|JUNK
+Vercel|Deployment failed|Production build failed: missing env var.|KEEP
+Vercel|Upgrade your plan|You are nearing your bandwidth limit. Upgrade to Pro.|JUNK
+Netlify|Deploy failed|Build failed on branch main.|KEEP
+Railway|Service crashed|Your service exited with code 1.|KEEP
+Docker|Image pushed|Image pushed to registry successfully.|JUNK
+AWS|Billing alert|Your estimated charges exceed 500 USD.|KEEP
+AWS|New service available|Try Amazon Bedrock for generative AI.|JUNK
+Cloudflare|Zone error|DNS resolution failing for example.com.|KEEP
+Bitbucket|Pull request|New pull request #91 opened by Ravi.|KEEP
