@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "url": "https://raw.githubusercontent.com/shreyash-sharma-byte/notifycleaner-classifier/main/model/model.tsv.gz",
   "sha256": "<sha256 of model/model.tsv.gz>",
   "minApp": 58,
