@@ -1,12 +1,12 @@
 {
-  "threshold": 0.1,
+  "threshold": 0.05,
   "features": 7584,
   "train_rows": 1027,
   "dev_rows": 148,
   "test_rows": 157,
   "test": {
-    "recall_junk": 0.9341,
+    "recall_junk": 0.9231,
     "false_dismissals": 0,
-    "accuracy": 0.9618
+    "accuracy": 0.9554
   }
 }
