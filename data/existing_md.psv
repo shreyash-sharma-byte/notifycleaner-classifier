@@ -1,0 +1,83 @@
+Signal||Are you free tonight?|KEEP
+Signal||Call me when you see this|KEEP
+Signal||Meeting at 4pm in room 2|KEEP
+Signal||dinner at 8?|KEEP
+Slack||standup in 10|KEEP
+Messenger||where are you|KEEP
+Signal||can you pick up milk|KEEP
+Messages||are we still on for lunch?|KEEP
+WhatsApp||Running 10 minutes late|KEEP
+Gmail||Did you get my email?|KEEP
+Signal||Thanks, that works for me|KEEP
+WhatsApp||See you tomorrow|KEEP
+Signal||I'll call you back|KEEP
+WhatsApp||On my way home|KEEP
+Slack||What time does it start?|KEEP
+WhatsApp||Happy birthday!|KEEP
+Signal||Miss you|KEEP
+WhatsApp||Can we talk?|KEEP
+Gmail||The meeting moved to Thursday|KEEP
+Slack||Got it, thanks|KEEP
+Signal||Let me check and get back to you|KEEP
+WhatsApp||You around this weekend?|KEEP
+Signal||Lunch tomorrow?|KEEP
+Gmail||I sent you the file|KEEP
+WhatsApp||No worries|KEEP
+Slack||Sounds good|KEEP
+WhatsApp||Are you coming to the party?|KEEP
+Signal||I'm at the station|KEEP
+Messages||Please send the address|KEEP
+Gmail||How did the interview go?|KEEP
+WhatsApp||We should catch up soon|KEEP
+Signal||Did you see the news?|KEEP
+Gmail||Can you send me the link?|KEEP
+WhatsApp||This is great news!|KEEP
+Signal||I'll be there in five|KEEP
+WhatsApp||Where should we meet?|KEEP
+Slack||Let's do it|KEEP
+Signal||Is your mom okay?|KEEP
+WhatsApp||I got the job!|KEEP
+Gmail||Thank you so much|KEEP
+WhatsApp||The kids are asleep|KEEP
+Signal||Just landed, will text you|KEEP
+WhatsApp||I got a great deal on the tickets|KEEP
+Gmail||The offer still stands if you want it|KEEP
+Signal||Is the free trial worth it?|KEEP
+Slack||Who won the match?|KEEP
+Zomato||50% OFF for you|JUNK
+Myntra||End of season sale|JUNK
+Amazon||Great Indian Festival|JUNK
+Swiggy||Hungry?|JUNK
+Flipkart||Big Billion Days|JUNK
+Uber||A ride on us|JUNK
+Nykaa||Beauty sale is live|JUNK
+Domino's||Buy 1 get 1 free|JUNK
+Spotify||Premium for less|JUNK
+LinkedIn||12 new jobs for you|JUNK
+CRED||Cashback waiting|JUNK
+AJIO||Last chance|JUNK
+MakeMyTrip||Your dream vacation|JUNK
+Gmail||Your weekly newsletter|JUNK
+ICICI Bank||A reward for you|JUNK
+Meesho||Mega sale|JUNK
+BigBasket||Weekend offer|JUNK
+Zomato||Gold membership|JUNK
+ICICI Bank||482913 is your OTP for a transaction of Rs 1299. Do not share this with anyone.|KEEP
+HDFC Bank||Rs 2499 debited from A/C XX4412 at Amazon. Available balance Rs 48220.|KEEP
+Zomato||Your order from Zomato has been delivered. Enjoy your meal!|KEEP
+Gmail||New sign-in to your Google Account from a Windows device in Pune.|KEEP
+Airtel||Your prepaid balance is low. Recharge to avoid interruption.|KEEP
+Bank||Your KYC expires today. Complete re-KYC to avoid suspension.|KEEP
+Amazon||Your package is out for delivery and will arrive today.|KEEP
+UPI||Your payment of Rs 499 failed. No money was deducted.|KEEP
+HDFC||Rs 15000 credited to your account. Ref no 88213.|KEEP
+IRCTC||Your PNR 4567890123 is confirmed. Boarding at 6:15 AM.|KEEP
+Google||A new login was blocked. Was this you? If not, re-verify.|KEEP
+PhonePe||Your refund of Rs 340 has been processed to your bank.|KEEP
+CRED||Your credit card bill is due on 12 Nov. Pay now to avoid late fees.|KEEP
+Amazon||Your order has been placed. We'll notify you when it ships.|KEEP
+Myntra||We have cancelled your order. The amount will be refunded in 3 days.|KEEP
+Bank||Margin shortfall in your trading account. Add funds to avoid square-off.|KEEP
+Cue?||Verdict|JUNK
+yes||KEEP (model −0.292)|JUNK
+yes||KEEP (model −0.867)|JUNK
